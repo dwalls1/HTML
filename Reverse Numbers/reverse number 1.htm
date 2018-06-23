@@ -1,0 +1,131 @@
+<html>
+
+<body>
+
+
+<form id="frm1" action="form_action.asp">
+
+  Enter Value : <input type="text" name="number" value=""><br>
+
+
+
+</form>
+
+
+<p>Click Execute</p>
+
+
+<button onclick="myFunction()">Execute</button>
+
+
+<p id="demo"></p>
+
+
+<script>
+
+function myFunction() {
+
+    var x = document.getElementById("frm1");
+
+    var text = "";
+
+    var text2 = "";
+
+    var text3 = "";
+
+    var i,j,k;
+
+    for (i = 0; i < x.length ;i++) {
+
+        text += x.elements[i].value ;
+
+
+
+    }
+
+    for (i = text.length-1; i > -1; i--){
+
+    text2 = text.charAt(i);
+
+
+
+    for (j = 0; j > -2; j--)
+
+
+
+    if ((text2 - 1) == -1){
+
+    text3 += "zero"+" ";
+
+    }
+
+    if ((text2 - 2) == -1){
+
+    text3 += "one"+" "
+
+    }
+
+    if ((text2 - 3) == -1){
+
+    text3 += "two"+" "
+
+    }
+
+    if ((text2 - 4) == -1){
+
+    text3 += "three"+" "
+
+    }
+
+    if ((text2 - 5) == -1){
+
+    text3 += "four"+ " "
+
+    }
+
+    if ((text2 - 6) == -1){
+
+    text3 += "five"+ " "
+
+    }
+
+    if ((text2 - 7) == -1){
+
+    text3 += "six"+ " "
+
+    }
+
+    if ((text2 - 8) == -1){
+
+    text3 += "seven"+" "
+
+    }
+
+    if ((text2 - 9) == -1){
+
+    text3 += "eight"+ " "
+
+    }
+
+    if ((text2 - 10) == -1){
+
+    text3 += "nine"+ " "
+
+    }
+
+    }
+
+
+
+    alert(text3);
+
+  // document.getElementById("demo").innerHTML = text;
+
+}
+
+</script>
+
+
+</body>
+
+</html>
